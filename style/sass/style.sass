@@ -1,0 +1,679 @@
+@import "vars"
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Myriad Pro", sans-serif
+
+a
+  text-decoration: none
+
+.container
+  max-width: 1160px
+  margin: 0 auto
+
+.logo
+  display: flex
+  width: 100%
+  min-width: 100px
+.button
+  width: 360px
+  height: 48px
+  font-size: 16px
+  background-color: #008DCD
+  border-radius: 24px
+  text-align: center
+  line-height: 48px
+  text-transform: uppercase
+  color: white
+  transition: all 0.3s
+  &:hover
+    box-shadow: 0 0 10px 0 #008DCD
+    cursor: pointer
+  &:active
+    box-shadow: none
+
+summary
+  display: block
+summary::-webkit-details-marker
+  display: none
+
+
+.safari .qualm__headlineArrow
+  display: none
+
+
+
+
+
+
+
+
+
+
+
+.header
+  width: 100%
+  background: url("../../img/header-img.jpg")
+  background-size: 100% 100%
+  padding-bottom: 155px
+  color: white
+  &__flex
+    display: flex
+    flex-direction: column
+  &__logoMenu
+    display: flex
+    height: 104px
+    align-items: center
+    width: 100%
+  &__menu-ul
+    width: 100%
+    display: flex
+    list-style-type: none
+    justify-content: space-around
+  &__menuBtn
+    display: none
+  &__textBlock
+    display: flex
+    flex-direction: column
+    max-width: 70%
+    margin-top: 50px
+  &__textHeadline
+    font-size: 48px
+    margin-top: 0
+    margin-bottom: 32px
+    font-weight: 700
+    text-transform: uppercase
+  &__text
+    font-size: 36px
+    font-weight: 700
+    margin-top: 0
+    margin-bottom: 45px
+
+.main
+  width: 100%
+.information
+  background-color: #F7F7F7
+  &__flex
+    padding-top: 100px
+    display: flex
+  &__textHeadlineBig
+    display: none
+  &__blockImg
+    width: 50%
+    padding-bottom: 100px
+  &__img
+    width: 100%
+    height: 100%
+  &__block
+    display: flex
+    flex-direction: column
+    margin-left: 97px
+    width: 50%
+  &__textHeadlineMin
+    font-size: 36px
+    font-weight: 700
+    margin-top: 20px
+    margin-bottom: 20px
+  &__text
+    font-size: 16px
+    margin-bottom: 40px
+.instruction
+  display: flex
+  flex-wrap: wrap
+  padding-top: 50px
+  justify-content: space-around
+  &__block
+    width: 40%
+    display: flex
+    flex-direction: column
+    margin-bottom: 60px
+  &__blockImg
+    padding-bottom: 50px
+  &__img
+    width: 100%
+    height: 100%
+  &__textHeadline
+    font-size: 30px
+    font-weight: 700
+  &__text
+    font-size: 20px
+.allWorries
+  width: 100%
+  background-color: #F7F7F7
+  &__flex
+    display: flex
+    justify-content: space-between
+    padding-top: 64px
+    padding-bottom: 64px
+    align-items: center
+  &__text
+    font-size: 36px
+    font-weight: 700
+.phoning
+  width: 100%
+  background-color: #008DCD
+  &__flex
+    color: #FFFFFF
+    display: flex
+    justify-content: space-between
+    padding-top: 64px
+    padding-bottom: 64px
+  &__textHeadline
+    font-size: 48px
+    font-weight: 700
+    text-transform: uppercase
+  &__text
+    font-size: 24px
+    margin-top: 25px
+  &__form
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+  &__input
+    color: #FFFFFF
+    padding-left: 20px
+    height: 48px
+    width: 336px
+    border: 1px solid #FFFFFF
+    border-radius: 24px
+    background: rgba(0,0,0,0)
+  &__button
+    background-color: #FFCC00
+    color: black
+    margin-top: 25px
+  &__button:hover
+    box-shadow: 0 0 10px 0 #FFCC00
+  &__button:active
+    box-shadow: none
+  &__label
+    font-size: 10px
+    margin-top: 15px
+  &__checkbox
+    font-size: 10px
+.reviews
+  padding-top: 64px
+  padding-bottom: 64px
+  &__headline
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 700
+    margin-left: 25px
+  &__mainBlock
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 64px
+    margin-left: 25px
+    margin-right: 25px
+  &__arrow
+    font-size: 20px
+    color: #C4C4C4
+  &__reviewsBlock
+    display: flex
+    margin-left: 70px
+    margin-right: 70px
+  &__reviewBlock
+    margin-left: 10px
+    margin-right: 10px
+  &__imgDetailsBlock
+    display: flex
+  &__imgBlock
+    padding-bottom: 30px
+  &__img
+    width: 100%
+    height: 100%
+  &__details
+    margin-left: 30px
+  &__name
+    font-size: 36px
+    font-weight: 700
+  &__firm
+    font-size: 20px
+    margin-top: 15px
+    margin-bottom: 15px
+  &__detailsText
+    font-size: 16px
+  &__text
+    font-size: 16px
+.advantages
+  width: 100%
+  background-color: #F7F7F7
+  &__flex
+    display: flex
+    flex-direction: column
+    padding-top: 64px
+    padding-bottom: 64px
+  &__headline
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 700
+    margin-bottom: 32px
+  &__mainBlock
+    display: flex
+  &__block
+    width: 20%
+    justify-content: space-between
+    margin-left: 10px
+    margin-right: 10px
+  &__blockImg
+    position: relative
+    height: 0
+    padding-top: 100%
+    background: #FFFFFF
+    border-radius: 50%
+  &__innerImg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+  &__innerImgOne
+    background: url("../../img/Layer3.png") no-repeat center
+    background-size: 55%
+  &__innerImgTwo
+    background: url("../../img/Layer1.png") no-repeat center
+    background-size: 45%
+  &__innerImgThree
+    background: url("../../img/Layer6.png") no-repeat center
+    background-size: 45%
+  &__innerImgFour
+    background: url("../../img/Layer5.png") no-repeat center
+    background-size: 45%
+  &__innerImgFive
+    background: url("../../img/Layer2.png") no-repeat center
+    background-size: 45%
+  &__innerImgSix
+    background: url("../../img/Layer4.png") no-repeat center
+    background-size: 45%
+  &__text
+    margin-top: 34px
+    text-align: center
+    font-size: 18px
+.guarantees
+  padding-top: 64px
+  padding-bottom: 64px
+  &__mainHeadline
+    font-size: 36px
+    text-transform: uppercase
+    margin-bottom: 32px
+    font-weight: 700
+  &__mainBlock
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__block
+    width: 30%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__externalImg
+    width: 50%
+  &__blockImg
+    position: relative
+    height: 0
+    padding-top: 100%
+    background: #F7F7F7
+    border-radius: 50%
+  &__innerImg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+  &__innerImgOne
+    background: url("../../img/Forma1.png") no-repeat center
+    background-size: 45%
+  &__innerImgTwo
+    background: url("../../img/Forma2.png") no-repeat center
+    background-size: 45%
+  &__innerImgThree
+    background: url("../../img/Forma3.png") no-repeat center
+    background-size: 45%
+  &__headlineMini
+    display: none
+  &__headline
+    font-size: 22px
+    margin-top: 32px
+    margin-bottom: 15px
+    font-weight: 700
+  &__text
+    font-size: 16px
+    margin-bottom: 32px
+  &__mainBlockMini
+    display: none
+.qualm
+  width: 100%
+  background-color: #D2ECF7
+  padding-top: 64px
+  padding-bottom: 64px
+  &__mainHeadline
+    font-size: 36px
+    margin-bottom: 36px
+    text-transform: uppercase
+    font-weight: 700
+  &__mainBlock
+    display: flex
+    justify-content: space-between
+  &__block
+    width: 48%
+  &__details
+    width: 100%
+    margin-right: 15px
+    min-height: 60px
+    margin-bottom: 20px
+    background-color: #FFFFFF
+    border-radius: 30px
+  &__details:hover
+    cursor: pointer
+  &__headlineSummary
+    padding-top: 10px
+    padding-left: 20px
+    padding-bottom: 10px
+    display: flex
+    justify-content: space-between
+  &__headlineText
+    font-size: 16px
+    display: flex
+  &__headlineArrow
+    display: block
+    margin-right: 20px
+    color: #008DCD
+    margin-top: 10px
+  &__details[open] &__headlineArrow
+    transform: rotate(180deg)
+  &__textBlock
+    padding-bottom: 20px
+    padding-top: 20px
+    background-color: #F7F7F7
+    border-bottom-left-radius: 30px
+    border-bottom-right-radius: 30px
+  &__text
+    margin-left: 20px
+    margin-right: 20px
+
+
+
+
+
+@media screen and (max-width: 1440px)
+  .button
+    width: 280px
+  .header
+    padding-bottom: 110px
+    background-size: auto
+    background-position: 65%
+    background-repeat: no-repeat
+    &__flex
+      margin-left: 25px
+      margin-right: 25px
+    &__textHeadline
+      font-size: 44px
+    &__text
+      font-size: 28px
+  .information
+    &__flex
+      padding-top: 25px
+      margin-left: 25px
+      margin-right: 25px
+    &__block
+      order: -1
+      margin-left: 0
+    &__blockImg
+      margin-left: 50px
+      padding-bottom: 50px
+    &__textHeadlineBig
+      display: block
+      font-size: 36px
+      font-weight: 700
+      margin: 0 25px
+      padding-top: 25px
+    &__textHeadlineMin
+      display: none
+    &__text
+      margin-top: 10px
+      margin-bottom: 15px
+      font-size: 14px
+  .instruction
+    padding-top: 25px
+    &__blockImg
+      padding-bottom: 10px
+    &__textHeadline
+      font-size: 26px
+    &__text
+      font-size: 16px
+  .allWorries
+    &__text
+      display: inline-block
+      width: 55%
+      font-size: 28px
+      margin-left: 25px
+    &__button
+      margin-right: 25px
+  .phoning
+    &__textBlock
+      margin-left: 25px
+    &__textHeadline
+      font-size: 28px
+    &__text
+      font-size: 14px
+    &__form
+      margin-right: 25px
+      margin-left: 0
+    &__input
+      width: 256px
+  .reviews
+    &__details
+      margin-left: 25px
+    &__name
+      font-size: 26px
+    &__firm
+      font-size: 18px
+    &__detailsText
+      font-size: 10px
+      margin-bottom: 5px
+    &__text
+      font-size: 14px
+  .advantages
+    &__headline
+      margin-left: 25px
+    &__text
+      font-size: 14px
+      margin-bottom: 30px
+  .guarantees
+    &__mainHeadline
+      margin-left: 25px
+    &__block
+      width: 33%
+      margin-right: 15px
+      margin-left: 15px
+    &__headline
+      font-size: 18px
+    &__text
+      font-size: 12px
+    &__button
+      width: 220px
+  .qualm
+    &__mainHeadline
+      margin-left: 25px
+    &__mainBlock
+      flex-direction: column
+      margin-left: 25px
+      margin-right: 25px
+    &__headlineText
+      font-size: 14px
+    &__headlineSummary
+      padding-top: 20px
+      padding-bottom: 20px
+      align-items: center
+    &__block
+      width: 100%
+    &__headlineArrow
+      margin-top: 0
+
+
+
+
+
+@media screen and (max-width: 768px)
+  .logo
+    width: 100px
+    margin-top: 30px
+    margin-left: 30px
+  .header
+    background: none
+    padding-bottom: 0
+    &__flex
+      margin-right: 0
+      margin-left: 0
+      align-items: center
+    &__logoMenu
+      justify-content: space-between
+      height: 280px
+      background: url("../../img/mini-header-img.jpg") 85%
+      align-items: flex-start
+    &__menu-ul
+      display: none
+    &__menuBtn
+      display: block
+      margin-right: 30px
+      margin-top: 30px
+    &__textBlock
+      width: 100%
+      margin: 20px 30px
+      align-items: center
+      text-align: center
+    &__textHeadline
+      color: black
+      font-size: 30px
+      margin-bottom: 18px
+    &__text
+      margin-bottom: 30px
+      color: black
+      font-size: 22px
+  .information
+    padding-bottom: 17px
+    &__flex
+      padding-top: 17px
+      flex-direction: column
+      align-items: center
+    &__block
+      order: 1
+      width: 100%
+      text-align: center
+      align-items: center
+    &__blockImg
+      padding-bottom: 0
+      width: 100%
+      margin-left: 0
+    &__textHeadlineBig
+      display: none
+    &__textHeadlineMin
+      display: block
+      font-size: 18px
+    &__text
+      font-size: 12px
+  .instruction
+    flex-direction: column
+    margin-left: 25px
+    margin-right: 25px
+    &__textBlock
+      text-align: center
+    &__block
+      width: 100%
+    &__text
+      font-size: 14px
+  .allWorries
+    &__flex
+      flex-direction: column
+      width: 100%
+      padding-bottom: 25px
+      padding-top: 25px
+      text-align: center
+    &__text
+      font-size: 24px
+      margin-bottom: 25px
+      margin-left: 0
+      width: 100%
+    &__button
+      margin-right: 0
+  .phoning
+    &__flex
+      flex-direction: column
+      align-items: center
+    &__textBlock
+      margin-bottom: 30px
+      margin-left: 0
+      text-align: center
+    &__form
+      margin-right: 0
+  .reviews
+    padding-top: 32px
+    padding-bottom: 32px
+    &__headline
+      text-align: center
+    &__mainBlock
+      margin-top: 32px
+    &__invis
+      display: none
+    &__imgBlock
+      padding-bottom: 10px
+    &__text
+      font-size: 12px
+    &__reviewsBlock
+      margin-left: 10px
+      margin-right: 10px
+    &__details
+      margin-left: 5px
+    &__name
+      font-weight: 300
+      font-size: 24px
+    &__firm
+      font-size: 14px
+      margin-bottom: 5px
+      margin-top: 5px
+    &__detailsText
+      margin-bottom: 2.5px
+    &__text
+      font-size: 14px
+  .advantages
+    &__mainBlock
+      flex-wrap: wrap
+      justify-content: center
+    &__headline
+      text-align: center
+      font-size: 28px
+    &__block
+      width: 25%
+    &__text
+      font-size: 12px
+  .guarantees
+    &__mainHeadline
+      text-align: center
+      font-size: 28px
+    &__mainBlock
+      display: none
+    &__mainBlockMini
+      display: flex
+      justify-content: space-between
+    &__block
+      width: 90%
+    &__imgHeadlineBlock
+      display: flex
+      align-items: center
+    &__headline
+      margin-left: 15px
+    &__text
+      margin-top: 20px
+    &__arrow
+      font-size: 18px
+      color: #C4C4C4
+      margin-left: 10px
+      margin-right: 10px
+      margin-top: 35px
+
+
+
+
