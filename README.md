@@ -1,1 +1,1 @@
-# SecondHtmlResponsiveSite_GeekBrains
+Second site HTML+CSS, responsive
